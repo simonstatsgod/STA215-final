@@ -1,0 +1,103 @@
+## Project:  STA 215, Fall 2024, Final Project
+# Located:   R Studio
+# File Name: Song
+# Date:      2024_11_25
+# Who:       Simon Colon
+
+## Load packages
+# NOTE: Run base.R if these commands return an error!
+library(readr)
+library(dplyr)
+library(tidytext)
+library(tidyverse)
+library(ggplot2)
+library(haven)
+library(forcats)
+library(psych)
+
+# Load data 
+library(readr)
+raw_data <- read_csv("raw_data.csv")
+View(raw_data)
+
+##################################################################################
+############### Table 1: descriptive statistics    ####################   
+##################################################################################
+table(raw_data$song_length)
+mean(raw_data$song_length)
+sd(raw_data$song_length)
+
+table(raw_data$fanbase)
+mean(raw_data$fanbase)
+sd(raw_data$fanbase)
+
+table(raw_data$song_descriptor)
+
+table(raw_data$song_topic)
+
+table(raw_data$personal_enjoyment)
+mean(raw_data$personal_enjoyment)
+sd(raw_data$personal_enjoyment)
+
+table(raw_data$album)
+
+##################################################################################
+#################### Figure 1: boxplot             ####################   
+##################################################################################
+lm(song_length ~ key, data = raw_data)
+aov(song_length ~ key, data = raw_data)
+summary(song_length ~ key, data = raw_data)
+boxplot(song_length ~ key, data = raw_data)
+
+lm(song_length ~ streams, data = raw_data)
+aov(song_length ~ streams, data = raw_data)
+summary(song_length ~ streams, data = raw_data)
+boxplot(song_length ~ streams, data = raw_data)
+
+# filter out songs longer than 10 minutes (600 seconds)
+raw_data_withououtlier <- raw_data %>%
+  filter(song_length < 600)
+#filter out songs with more than 10 million listens
+raw_data_withoutlistensoutlier <- raw_data %>%
+  filter(number_of_listens < 10000000)
+
+##################################################################################
+####################   Figure 2: scatter plot             ####################   
+##################################################################################
+linear_plot <- plot(raw_data$song_length, raw_data$streams)
+print(linear_plot)
+meany <- mean(raw_data$song_length)
+meanx <- mean(raw_data$streams)
+abline(h = meanx, col = "black")
+abline(v = meany, col = "black")
+linear_relationship <- lm(streams ~ song_length, data = raw_data)
+summary(linear_relationship)
+abline(linear_relationship, col = "red")
+
+linear_plot <- plot(raw_data_withoutlistensoutlier$number_of_listens, raw_data_withoutlistensoutlier$personal_enjoyment)
+print(linear_plot)
+meany <- mean(raw_data_withoutlistensoutlier$number_of_listens)
+meanx <- mean(raw_data_withoutlistensoutlier$personal_enjoyment)
+abline(h = meanx, col = "black")
+abline(v = meany, col = "black")
+linear_relationship <- lm(personal_enjoyment ~ number_of_listens, data = raw_data_withoutlistensoutlier)
+summary(linear_relationship)
+abline(linear_relationship, col = "red")
+
+##################################################################################
+####################  Figure 3: residual plot                ####################   
+##################################################################################
+# Plot the residuals
+plot(raw_data$song_length, residuals(linear_relationship))
+plot(raw_data$streams, residuals(linear_relationship))
+
+# Add a horizontal line at zero to indicate the baseline
+abline(h = 0, col = "red")
+
+
+##################################################################################
+####################  Table 2: contingency table                ####################   
+##################################################################################
+table(raw_data$artist, raw_data$producer)
+
+chisq.test(table(raw_data$artist, raw_data$producer))
