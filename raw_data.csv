@@ -1,0 +1,121 @@
+,title,artist,producer,streams,album_sales,bpm,gender,time_signature,fanbase,song_length,instrument_number,key,release_year,use_in_media,pop,rock,rap,country,hip_hop,alt.,reggae,r&b,sad,happy,angry,desperatation,hopeful,fearful,ashamed,romantic,grammy,vma,billboard_music_award,ama,mtv
+SONG1,One Sweet Day,Mariah Carey and Boyz II Men,Mariah Carey and Walter Afanasieff,"203,545,036",4,128,9,7,13759413,281,5,D♭,1995,0,1,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,1,0,2,0,1
+SONG2,Don't Forget About us ,Mariah Carey ,Jermaine Dupri Mariah Carey Bryan-Michael Cox,"52,881,523",1,144,1,7,13759413,233,5,B♭,2005,0,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0,1,1,0,0,0,0
+SONG3,I swear ,All-4-one,David Foster,"237,542,331",1,83,2,7,1152657,259,5,G♭,1994,10,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,1,2,0,0,0,0
+SONG4,Lose Yourself,Eminem,EminemJeff Bass,"2,312,638,621",13,171,2,7,47937078,326,5,D,2005,3,0,0,1,0,0,0,0,0,0,0,1,0,1,1,0,0,2,0,0,0,2
+SONG5,Tik Tok,Kesha,Dr. Luke and Benny Blanco,"1,305,678,221",12,120,1,7,13126166,199,5,D,2010,6,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1
+SONG6,So What ,Pink,Max Martin,"668,283,664",4.5,126,1,7,17404655,215,5,B,2008,4,1,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,2
+SONG7,Blaze of Glory ,Jon Bon Jovi,Jon Bon Jovi Danny Kortchmar,"169,722,609",1,79,2,7,3412302,340,6,G,1994,1,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,2,1
+SONG8,Promiscuous,Nelly Furtado ft. Timbaland,Timbal and Danja,"1,289,463,683",7,114,9,7,9510933,242,5,B♭,2006,3,1,0,0,0,1,0,0,0,0,1,0,1,1,0,0,1,1,0,2,0,0
+SONG9,I like the way (the kissing game) ,Hi-Five,Teddy Riley,"33,414,611",0.5,104,2,7,347918,348,5,D♭,1990,2,1,0,0,0,0,0,0,1,0,1,0,0,1,0,0,1,0,0,0,0,0
+SONG10,Have you ever really loved a women,Bryan Adams ,"Robert John ""Mutt"" LangeBryan Adams","211,965,314",0.6,146,2,4,10431892,291,6,G,1996,4,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+SONG11,Because I love you,Stevie B,Stevie Hill,"14,145,006",0.5,63,2,7,521718,246,5,D♭,1990,1,1,0,0,0,0,0,0,0,1,1,0,1,1,0,0,1,0,0,0,0,0
+SONG12,Right Round ,Flo Rida,"Dr. Luke, Kool Kojak","671,894,423",8,125,2,7,12825514,204,5,G,2009,8,1,0,1,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1
+SONG13,Baby got back,Sir-Mix-A-Lot,Sir Mix-A-Lot,"264,123,149",2,128,2,7,1974938,262,4,D♭,1992,30,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0,1,2,0,0,0,0
+SONG14,Nothing compares to you ,Sinead O'connor,Sinéad O'Connor Nellee Hooper,"398,249,249",1,120,1,7,2258251,280,5,F,1990,7,1,1,0,0,0,1,0,0,1,0,1,0,0,0,0,1,0,0,0,0,2
+SONG15,Hey Ya ,OutKast,André 3000Cutmaster Swiff,"1,439,937,754",1,80,2,7,9755824,235,6,E,2003,8,1,0,1,0,1,0,0,0,1,1,1,1,1,0,0,1,2,0,0,0,2
+SONG16,Savage Love ,Jawsh 685 and Jason Derulo,Jawsh 685,"1,139,053,532",4,150,2,7,1423178,171,5,C,2020,0,1,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,0,0,0,0,0
+SONG17,Grenade,Bruno Mars," Bruno Mars, Philip Lawrence, and Ari Levine","1,397,363,716",10,110,2,7,48904208,222,5,D,2010,2,1,0,0,0,0,0,0,0,1,0,1,1,0,0,1,1,1,0,0,0,1
+SONG18,Bleeding Love,Leona Lewis,Ryan Tedder,"890,216,356",1,104,1,7,3228885,262,5,F,2007,6,1,0,0,0,0,0,0,0,1,0,1,1,0,1,0,1,1,0,0,0,0
+SONG19,Candy Shop,50 Cent ft. Olivia,Scott Storch,"1,012,606,107",5,125,9,15,56629525,209,5,B,2005,5,0,0,1,0,1,0,0,1,0,1,0,0,0,0,0,1,1,0,0,0,1
+SONG20,Firework,katy perry,"StarGate, Sandy Vee","1,141,996,261",12,124,5,7,35808435,227,5,A♭,2012,13,1,0,0,0,0,0,0,0,1,1,0,0,1,0,0,1,1,0,0,0,0
+SONG21,More Than Words,Extreme,Michael Wagener,"693,988,441",0.5,92,2,7,2050346,334,4,G♭,1990,9,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+SONG22,Boom Boom Pow,Black Eyed Peas,will.i.am John Baptiste Poet Name Life,"413,215,887",5,130,9,7,18620166,251,5,A,2009,5,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,2,0,0,0,0
+SONG23,Positions,Arianna Grande,London On Da TrackTommy BrownMr. FranksKillah B,"1,488,072,304",2,144,1,7,45042947,172,5,C,2020,1,1,0,0,0,0,0,0,1,0,1,0,0,1,0,0,1,1,0,0,0,0
+SONG24,Music ,Madonna,MadonnaMirwais Ahmadzai,"86,730,039",3,120,1,7,15694297,225,5,G,2009,1,1,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,1,0,2,0,1
+SONG25,Nice & slow,Usher,Jermaine Dupri,"133,187,092",3,122,2,7,18742325,227,5,F,1997,0,0,0,0,0,0,0,0,1,0,1,0,1,1,0,0,1,0,0,0,0,0
+SONG26,Circles,Post Malone,Post Malone Frank Dukes Louis Bell,"2,599,546,921",10,120,2,7,38218886,215,5,C,2019,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0
+SONG27,I wanna love you,Akon ft. Snoop Dogg,Akon,"500,396,051",3,100,2,7,15475316,246,5,C,2006,1,0,0,1,0,1,0,0,0,0,1,0,1,1,0,0,1,1,0,0,0,0
+SONG28,Stronger,Kanye West,Kanye West,"1,460,573,023",10,104,2,7,26577840,311,5,D♭,2007,3,0,0,0,0,1,0,0,0,0,1,1,0,1,0,0,0,2,0,0,0,0
+SONG29,Wrecking Ball,Miley Cyrus,"Dr. Luke, Cirkut","979,144,788",9,120,5,7,26050382,221,5,F,2013,10,1,0,0,0,0,0,0,0,1,0,1,0,0,0,1,1,0,0,0,0,2
+SONG30,Rude,Magic!,Adam Messinger,"1,596,870,249",8,144,2,7,6168945,224,5,D♭,2014,0,1,0,0,0,0,0,1,0,1,0,1,1,0,1,0,1,0,0,0,0,0
+SONG31,Empire state of mind ,Jay-Z ft. Alicia Keys ,"Al Shux, Janet Sewell-Ulepic, Angela Hunte","1,096,078",10,174,9,7,36730162,276,5,B,2009,2,1,1,1,0,1,0,0,1,0,1,0,0,1,0,0,0,0,1,0,0,0
+SONG32,I'm Real ,Jennifer Lopez ft. Ja Rule,"Troy Oliver, Cory Rooney, L.E.S.","189,488,568",6,83,9,7,25648492,264,5,E,2001,0,1,1,0,0,0,0,0,1,1,0,1,0,0,0,0,1,1,1,0,0,0
+SONG33,My All,Mariah Carey and Boyz II Men,"Mariah Carey, Walter Afanasieff","137,673,653",2,108,9,7,28408943,267,5,G,1997,0,1,1,0,0,0,0,0,1,1,0,1,1,0,1,0,1,0,0,1,0,0
+SONG34,Crank That (Soulja Boy),Soulja Boy Tell em,Soulja Boy,"591,612,524",3,140,2,7,11492086,206,4,C,2007,4,1,1,1,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0
+SONG35,Bodak Yellow,"Cardi B, ft. Bad bunny and J Balvin","J. White Did It, Laquan Green","911,511,661",11,125,9,7,31068285,223,3,B,2017,2,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,1,0,1,0,0
+SONG36,Down ,Jay Sean ft. Lil Wayne,"J-Remy, Bobby Bass","752,332,209",0.5,132,2,7,9283933,209,5,B,2009,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+SONG37,Stronger ,Kelly Clarkson,Greg Kurstin,"690,023,082",7,116,1,7,18090699,222,5,C,2006,8,1,0,0,0,0,0,0,0,1,1,0,0,1,0,0,0,1,1,0,0,0
+SONG38,That's the way Love goes,Janet Jackson,"Jimmy Jam and Terry Lewis, Janet Jackson","151,886,979",6,98,1,7,5630971,262,5,F,1993,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,2
+SONG39,Gold Digger,Kanye West ft. Jamie Foxx,"Kanye West, Jon Brion","1,215,191,992",8,93,2,7,67559627,208,5,D♭,2005,8,1,0,0,0,1,0,0,0,0,1,1,0,1,0,1,1,0,0,0,0,0
+SONG40,Burn ,Usher,"Jermaine Dupri, Bryan Michael Cox","268,238,370",4,120,2,7,42013796,241,5,D♭,2004,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,1
+SONG41,We are never getting back together,Taylor Swift ,"Max Martin, Shellback, Taylor Swif","692,096,155",4.1,172,1,7,93297811,192,5,G,2021,2,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,1,0,0,0,0,0
+SONG42,Savage , Meghan Thee Stallion,J. White Did It,"436,045,798",4,169,1,7,33505671,155,4,B,2000,1,0,0,1,0,0,0,0,0,0,1,1,0,1,0,0,1,0,0,0,0,0
+SONG43,Smooth ,Santana ft. Rob Thomas,Matt Serletic,"418,980,271",0.5,116,2,7,13708536,295,6,A,1999,1,0,1,0,0,0,1,0,0,1,1,1,1,1,0,0,1,1,0,0,0,0
+SONG44,Independant Women Pt. I,Destiny's Child,Beyoncé Knowles Poke and Tone Cory Rooney,"290,623,493",1,138,1,7,16051589,221,5,G♭,2000,2,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+SONG45,Slow Motion ,Juvenile ft. Soulja Slim,Dani Kartel,"125,290,727",0.5,95,2,7,2397908,212,5,C,2000,3,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,0,0,0
+SONG46,Shape of you ,Ed Sheeran ,"Ed Sheeran, Steve Mac","4,029,822,298",13,96,2,7,75536528,233,4,D♭,2009,3,1,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,1,0,0,0,1
+SONG47,God's Plan,Drake,"Cardo, Yung Exclusive, Boi-1da, 40 (addi.)","2,607,278,448",5,77,2,7,75536528,198,4,G,2017,3,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+SONG48,Rockstar ,DaBaby ft. Roddy Ricch,SethInTheKitchen,"570,504,940",5,90,2,7,24312482,181,4,B,2020,1,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1
+SONG49,Mo Money Mo Problem ,The Notorious B.I.G ft. Puff daddy and Mase,"Stevie J, Sean ""Puffy"" Combs","516,590,680",1,105,2,7,25711571,257,5,G♭,1997,4,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+SONG50,Havana,Camilla Cabello,Frank Dukes,"2,136,142,829",10,105,1,7,43813353,217,5,D,2017,2,1,0,2,0,0,0,0,0,1,0,0,1,0,0,0,1,1,0,0,0,1
+SONG51,Panda ,Desiigner,	Menace,"1,198,281,294",5,145,1,7,4319890,198,4,B♭,2016,5,0,0,1,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG52,Kiss Kiss,Chris Brown ft. T-Pain,T-Pain,"296,865,063",1,140,2,4,50233823,212,5,B♭,2007,2,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+SONG53,Always be my Baby ,Mariah Carey ,"Mariah Carey, Jermaine Dupri","408,466,485",5,79,1,7,28408943,258,5,E,1995,4,1,0,0,0,0,0,0,1,0,1,0,0,1,0,0,1,1,0,0,0,0
+SONG54,One more night,Maroon 5,"Shellback, Max Martin","953,513,168",6,93,2,7,64430172,219,5,F,2021,3,1,1,0,0,1,0,0,1,,0,0,0,0,0,0,0,0,0,1,0,0
+SONG55,Low ,Flo Rida ft. T-Pain,"DJ Montay, T-Pain","1,130,560,004",4,145,2,7,31721529,212,5,B♭,2007,10,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,1,0,0,0,0,0
+SONG56,Baby Boy ,Beyonce ft. Sean Paul,"Beyoncé, Scott Storch","340,084,392",1,91,9,7,55363635,243,5,D♭,2003,0,0,0,0,0,1,0,0,1,0,1,0,1,1,0,0,1,0,0,0,0,0
+SONG57,Fancy,Iggy Azalea ft. Charli XCX,"The Invisible Men, the Arcade","745,053,243",9,95,1,7,7717204,192,4,B♭,2014,9,1,0,1,0,0,1,0,0,0,1,1,0,1,0,0,0,0,0,0,0,0
+SONG58,Hold On ,Wilson Phillips,Glen Ballard,"194,130,691",0.5,98,2,7,1445471,234,6,F,2011,13,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+SONG59,Try Again,Aaliyah ,Timbaland,"159,017,649",3,93,1,7,7405960,245,5,G♭,2000,3,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG60,Ain't it funny ,Jennifer Lopez ft. Ja Rule,"Cory Rooney, Dan Shea","31,862,500",3,89,9,7,25648492,213,5,B,2002,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG61,Bad and Boujee,Migos ft. Lil Uzi Vert,Metro Boomin G Koop,"954,314,924",4,127,9,7,18379814,334,4,B,2016,2,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+SONG62,Nice for what,Drake,"40, Murda Beatz, Corey Litwin, Blaqnmild","1,311,233,576",9,93,2,7,75536528,210,5,A♭,2018,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG63,perfect,Ed Sheeran ,Ed Sheeran Will Hicks,"3,114,766,952",13,95,2,4,75536528,263,5,A♭,2017,7,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0
+SONG64,When a Man loves a women ,Micheal Bolton ,uncredited,"225,988,444",1,165,2,4,4221893,172,6,D♭,1966,2,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+SONG65,gonna make you sweat,C+C music factory ,Clivillés and Cole,"232,975,944",2,112,9,7,2388059,244,4,G♭,1990,29,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG66,Grillz ,Nelly ft. Paul wall and Ali and Gipp,Jermaine Dupri,"141,133,961",1,83,2,7,19523135,213,3,E,2005,0,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+SONG67,to be with you ,Mr. Big ,Kevin Elson,"380,398,307",0.5,84,2,7,2820313,207,4,E,1992,2,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2
+SONG68,7 rings ,Arianna grande,"Tommy Brown, Charles Anderson, Michael Foster","2,353,845,492",9,140,1,7,79805588,178,5,D♭,2019,5,1,0,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+SONG69,I'm your Baby tonight ,Whitney houston ,"Whitney Houston, Babyface, L.A. Reid, Luther Vandross, Michael Masser, Narada Michael Walden, Ricky Minor, Stevie Wonder","46,527,822",10,165,1,4,25853889,241,5,G♭,1990,1,1,0,0,0,0,0,0,1,0,1,0,1,1,0,0,1,0,1,1,0,0
+SONG70,Sorry ,Justin Bieber,"BloodPop, Skrillex","2,202,182,274",1,100,2,7,81367610,200,5,C,2015,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+SONG71,Dark Horse,katy perry,"Dr. Luke, Max Martin, Cirkut","1,535,678,797",6.4,132,5,7,61803550,215,5,G♭,2013,1,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG72,The Sign ,Ace of Base,"Berggren, Denniz Pop, Douglas Carr","320,461,134",23,97,9,7,10329499,190,5,E,1993,4,1,1,0,0,1,1,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0
+SONG73,The Boy is Mine ,Brandy and Monica,"Darkchild, Brandy, Dallas Austin","283,020,854",5,93,2,7,7844975,290,5,D♭,1998,4,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,1,0,0,0,0,0
+SONG74,Get busy,Sean Paul,Steven Marsden,"582,752,986",3,100,2,7,34331812,211,5,B♭,2003,7,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,1,0,0,0
+SONG75,Can't stop the feeling ,Justin Timberlake,"Timberlake, Martin, Shellback","1,794,521,547",7,113,2,7,40103364,236,6,C,2016,1,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG76,Shake ya Tailfeather ,"Nelly, P. Diddy, and Murphy Lee","Nelly & Jayson ""Koko"" Bridges","148,203,674",6,97,2,7,19523135,262,5,D♭,2003,2,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0
+SONG77,Cheap Thrills ,Sia ft. Sean Paul,Greg Kurstin,"1,824,493,758",1,90,9,7,57307649,211,5,G♭,2016,6,1,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0
+SONG78,Kiss from a Rose,Seal,Trevor Horn,"466,460,898",6,132,2,4,4890395,288,5,B♭,2005,14,1,1,0,0,0,0,0,1,1,1,0,1,1,0,0,1,0,0,0,0,0
+SONG79,Inside your heaven ,Carrie Underwood,Desmond Child,"6,652,105",8,135,1,7,10795121,220,5,G,2000,0,1,0,0,1,1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+SONG80,Everything You Want,Vertical Horizon ,"Mark Endert, Ben Grosse","111,724,924",7,94,9,7,985228,276,5,E♭,2015,1,0,0,0,0,0,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0
+SONG81,Can't Feel My Face,The Weekend ,"Max Martin, Ali Payami","1,822,614,058",3,108,2,7,120693473,215,5,A,2002,3,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+SONG82,Foolish ,Ashanti,Irv Gotti,"380,025,367",3,90,1,7,6491461,223,5,D♭,1995,2,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+SONG83,Exhale,Whitney houston ,Babyface,"36,099,449",45,138,1,7,25853889,210,5,A♭,1997,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+SONG84,I'll be Missing you,Diddy and Faith Evans,"Puff Daddy, Stevie J","615,690,253",7,110,9,7,12790249,253,6,E♭,2010,1,0,0,0,0,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0
+SONG85,Only Girl ,Rihanna,"Stargate, Sandy Vee, Kuk Harrell","1,208,458,198",9,126,1,7,86689530,235,5,B♭,1993,4,1,0,0,0,0,0,0,0,0,1,0,1,1,0,0,1,0,0,0,0,0
+SONG86,The Power of Love ,Celine Dion,David Foster,"227,508,731",30,140,1,7,17559234,275,5,B♭,2007,2,1,1,0,0,0,1,0,1,0,1,1,1,1,0,0,0,0,0,0,0,0
+SONG87,Umbrella ,Rihanna and Jay-Z,Tricky Stewart,"1,654,206,780",9,174,9,7,86689530,276,5,B♭,2005,3,1,0,0,0,1,0,0,1,1,1,0,0,1,1,0,1,0,0,0,0,0
+SONG88,Bad Day ,Daniel Powter,"Mitchell Froom, Jeff Dawson","610,423,707",1,140,2,7,3743528,237,5,F,2005,5,1,1,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG89,Pump up The Jam ,Technotronic,Thomas De Quincey,"162,801,924",1,125,9,7,3716457,214,4,F#,1989,18,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0
+SONG90,Love in this Club ,Usher ft. Young Jeezy,Polow da Don,"301,734,838",10,140,2,7,42013796,256,5,B♭,2008,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+SONG91,Can't help falling in love with you ,UB40,UB40,"258,008,199",30,172,2,7,9203356,208,4,D,1993,3,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+SONG92,I'm too Sexy,Right Said Fred,TommyD,"121,327,669",3,122,2,7,18,216,4,F,1991,15,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+SONG93,You're Beautiful,James Blunt,Tom Rothrock,"932,745,938",5,82,2,7,10363375,213,4,A,2004,6,1,1,0,0,0,1,1,1,0,0,1,0,1,0,0,0,0,1,0,0,0
+SONG94,Black or White,Micheal Jackson,"Michael Jackson, Bill Bottrell","243,944,890",66,115,2,7,46520332,202,5,E,1991,3,1,0,0,0,1,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+SONG95,Always be my Baby ,Mariah Carey,"Mariah Carey, Jermaine Dupri","409,876,043",28,79,1,7,28408943,258,4,A,1995,4,1,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+SONG96,Baby One More Time ,Britney Spears,"Max Martin, Rami Yacoub","932,970,187",30,200,1,7,39562746,211,4,B♭,1998,3,1,0,0,0,0,0,0,0,1,0,1,1,1,0,1,1,1,0,0,0,0
+SONG97,Yeah ,Usher ft. Lil jon and Ludacris,Lil Jon,"1,437,160,744",10,105,2,7,42013796,250,4,B♭,2004,4,0,0,0,0,1,1,0,1,0,1,0,0,0,1,0,0,0,0,0,0,0
+SONG98,Big Girls Don't Cry,Fergie,will.i.am,"608,816,791",3,113,1,7,12527567,266,4,C,2006,2,1,1,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0,0,0
+SONG99,Family Affair,Mary J. Blige,Dr. Dre,"555,081,534",3,93,1,7,24870837,264,4,D♭,2001,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG100,What's my name ,Rihanna ft. Drake,"Stargate, Kuk Harrell","561,624,433",1,100,9,7,3743528,263,4,B♭,2010,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG101,Stay,Kid Laroi and Justin Bieber,"Cashmere Cat, Charlie Puth, Omer Fedi, Blake Slatkin","3,293,794,606",1,170,2,7,46796152,241,4,A♭,2012,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG102,All about that base ,Meghan Trainor,Kevin Kadish,"846,632,030",1,134,1,7,28828516,190,4,C♭,2014,5,1,0,0,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0
+SONG103,Doo Wop (That Thing),Lauryn Hill,Lauryn Hill,"498,192,080",8,100,1,7,14201636,245,4,D♭,1998,1,0,0,0,0,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,0,0
+SONG104,Unbreak My Heart,Toni Braxton,David Foster,"265,397,722",6,110,1,7,4664889,270,4,F,1996,8,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0
+SONG105,Always on Time ,Ja Rule ft. Ashanti,Irv Gotti,"446,259,412",3,97,9,7,7275945,227,4,F,2001,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+SONG106,S & M ,Rihanna,"Stargate, Sandy Vee","1,140,604,388",1,128,1,7,3743528,242,4,A,2011,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG107,Truth Hurts,Lizzo,"Ricky Reed, Tele","1,008,123,102",1,158,1,7,11325322,175,4,A♭,2017,4,1,0,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG108,Girls like you ,Maroon 5 ft. Cardi B,"Cirkut, Jason Evigan","1,683,104,269",1,125,9,7,64430172,215,4,A♭,2011,1,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+SONG109,Can't Hold Us,Macklemore,Ryan Lewis,"2,568,248,275",1,146,2,7,30252442,258,5,D♭,2001,10,1,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,1,0,0
+SONG110,Creep,Radiohead,"Sean Slade, Paul Q. Kolderie","1,822,260,429",3,93,2,7,30280439,236,4,G,1992,12,0,1,0,0,0,1,0,0,1,0,1,1,0,0,1,0,1,0,1,1,0
+SONG111,Check on it,Beyonce ft. Slim Thug,Swizz Beatz,"107,575,648",5,166,9,7,55363635,210,3,D♭,2005,0,0,0,0,0,1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0
+SONG112,Buy U a Drank,T-Pain ft. Young Joc,T-Pain,"700,772,315",1,80,2,7,16247760,216,4,D♭,2007,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG113,Escapade,Janet Jackson,"Jimmy Jam and Terry Lewis, Janet Jackson","38,817,797",14,115,1,7,5630971,284,4,A♭,1990,2,1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG114,Temperature,Sean Paul,"Rohan ""Snowcone"" Fuller","926,297,315",1,125,2,7,34331812,213,4,F,2005,4,0,0,0,0,1,0,1,1,0,1,0,1,1,0,0,1,0,1,0,0,0
+SONG115,All I have,Jennifer Lopez ft. LL Cool J ,"Cory Rooney, Ron G, Dave McPherson","135,557,649",3,83,9,7,25648492,225,4,E♭,2002,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+SONG116,We Belong Together,Mariah Carey,Mariah Carey Jermaine Dupri Manuel Seal,"659,588,422",5,140,1,7,28408943,202,4,D♭,2005,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+SONG117,Stutter,Joe ft. Mystical,"Roy ""Royalty"" Hamilton, Teddy Riley","45,107,792",1,90,1,7,3601424,234,4,E♭,2001,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+SONG118,Moves Like Jaggar,Maroon 5,"Shellback, Benny Blanco","1,582,078,944",10,128,2,7,64430172,202,5,B♭,2011,2,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,1,1
+SONG119,OMG,Usher,will.i.am,"377,831,943",10,130,2,7,42013796,243,4,A♭,2010,1,1,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,1
+SONG120,How do you Want it,2Pac ft. K-Ci and JoJo ft. Dr. Dre ,"Johnny ""J"" & Mr. Dalvin","201,178,070",10,134,2,7,24669307,263,4,E,1996,1,0,0,0,0,0,0,1,0,0,0,0,1,1,1,1,0,1,0,0,0,0
