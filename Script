@@ -112,3 +112,47 @@ plot(
 
 # Add a horizontal line at the mean of the residuals (which should ideally be zero)
 abline(h = mean(residuals), col = "red", lty = 2, lwd = 2)  # Red dashed line
+
+##################################################################################
+####################  Table 1: Descriptive Statistics         ####################   
+##################################################################################
+# Descriptive statistics using summary() for all variables
+summary(raw_data)
+
+# Descriptive statistics using mean() and sd() for individual variables
+mean_song_length <- mean(raw_data$song_length)
+sd_song_length <- sd(raw_data$song_length)
+
+mean_streams <- mean(raw_data$streams)
+sd_streams <- sd(raw_data$streams)
+
+# Output to check the means and standard deviations
+cat("Mean Song Length: ", mean_song_length, "\n")
+cat("SD Song Length: ", sd_song_length, "\n")
+cat("Mean Streams: ", mean_streams, "\n")
+cat("SD Streams: ", sd_streams, "\n")
+
+# If you want a more detailed summary from the psych package
+# install.packages("psych")  # Uncomment if you don't have this package installed
+library(psych)
+describe(raw_data)
+##################################################################################
+####################  Table 2: Contingency Table             ####################   
+##################################################################################
+# Create a contingency table between two categorical variables (e.g., variable1 and variable2)
+contingency_table <- table(raw_data$variable1, raw_data$variable2)
+
+# View the contingency table
+print(contingency_table)
+
+# Perform Chi-square test on the contingency table
+chisq_test <- chisq.test(contingency_table)
+
+# Output the results of the Chi-square test
+print(chisq_test)
+
+# For a clearer, formatted table, use the xtable package (if desired)
+# install.packages("xtable")  # Uncomment if not installed
+library(xtable)
+xtable(contingency_table)
+
