@@ -27,9 +27,9 @@ table(raw_data$song_length)
 mean(raw_data$song_length)
 sd(raw_data$song_length)
 
-table(raw_data$fanbase)
-mean(raw_data$fanbase)
-sd(raw_data$fanbase)
+table(raw_data$streams)
+mean(raw_data$streams)
+sd(raw_data$streams)
 
 table(raw_data$song_descriptor)
 
@@ -49,55 +49,66 @@ aov(song_length ~ key, data = raw_data)
 summary(song_length ~ key, data = raw_data)
 boxplot(song_length ~ key, data = raw_data)
 
-lm(song_length ~ streams, data = raw_data)
-aov(song_length ~ streams, data = raw_data)
-summary(song_length ~ streams, data = raw_data)
-boxplot(song_length ~ streams, data = raw_data)
-
-# filter out songs longer than 10 minutes (600 seconds)
-raw_data_withououtlier <- raw_data %>%
-  filter(song_length < 600)
-#filter out songs with more than 10 million listens
-raw_data_withoutlistensoutlier <- raw_data %>%
-  filter(number_of_listens < 10000000)
+lm(song_length ~ key, data = raw_data)
+aov(song_length ~ key, data = raw_data)
+summary(song_length ~ key, data = raw_data)
+boxplot(song_length ~ key, data = raw_data)
+boxplot(song_length ~ key, data = raw_data, 
+        xlab = "Key Signature", 
+        ylab = "Song Length (seconds)", 
+        main = "Figure 1: Song Length vs Key Signature")
 
 ##################################################################################
 ####################   Figure 2: scatter plot             ####################   
 ##################################################################################
-linear_plot <- plot(raw_data$song_length, raw_data$streams)
-print(linear_plot)
+# Create a scatter plot with clean labels
+
+# Log-transform the 'streams' variable
+raw_data$lnstreams <- log(raw_data$streams)
+
+# Create the scatter plot with the log-transformed 'streams'
+plot(
+  raw_data$song_length, 
+  raw_data$lnstreams,  # Use log-transformed 'streams' for the Y-axis
+  xlab = "Song Length",  # Clean X-axis label
+  ylab = "Log of Streams",  # Update Y-axis label to reflect log transformation
+  main = "Figure 2: Song Length and Streams",  # Update plot title
+  pch = 16,  # Use a filled circle for points
+  col = "blue"  # Points color
+)
+
+# Add mean lines for the new Y-axis (log-transformed streams)
 meany <- mean(raw_data$song_length)
-meanx <- mean(raw_data$streams)
-abline(h = meanx, col = "black")
-abline(v = meany, col = "black")
+meanx <- mean(raw_data$lnstreams)  # Use log-transformed 'streams' for the mean
+abline(h = meanx, col = "black", lty = 2)  # Horizontal mean line
+abline(v = meany, col = "black", lty = 2)  # Vertical mean line
+
+# Fit a linear model using the log-transformed 'streams'
+linear_relationship <- lm(lnstreams ~ song_length, data = raw_data)  # Use log-transformed 'streams'
+summary(linear_relationship)
+
+# Add the regression line to the plot for log-transformed 'streams'
+abline(linear_relationship, col = "red", lwd = 2)  # Regression line in red
+
+##################################################################################
+####################  Figure 3: Residual Plot                 ####################   
+##################################################################################
+# Fit the linear regression model (from Figure 2)
 linear_relationship <- lm(streams ~ song_length, data = raw_data)
-summary(linear_relationship)
-abline(linear_relationship, col = "red")
 
-linear_plot <- plot(raw_data_withoutlistensoutlier$number_of_listens, raw_data_withoutlistensoutlier$personal_enjoyment)
-print(linear_plot)
-meany <- mean(raw_data_withoutlistensoutlier$number_of_listens)
-meanx <- mean(raw_data_withoutlistensoutlier$personal_enjoyment)
-abline(h = meanx, col = "black")
-abline(v = meany, col = "black")
-linear_relationship <- lm(personal_enjoyment ~ number_of_listens, data = raw_data_withoutlistensoutlier)
-summary(linear_relationship)
-abline(linear_relationship, col = "red")
+# Extract residuals from the model
+residuals <- resid(linear_relationship)
 
-##################################################################################
-####################  Figure 3: residual plot                ####################   
-##################################################################################
-# Plot the residuals
-plot(raw_data$song_length, residuals(linear_relationship))
-plot(raw_data$streams, residuals(linear_relationship))
+# Create the residual plot
+plot(
+  raw_data$song_length,  # X-axis: predictor (independent variable)
+  residuals,             # Y-axis: residuals (errors from regression)
+  xlab = "Song Length",  # Label for the X-axis
+  ylab = "Residuals",    # Label for the Y-axis
+  main = "Figure 3: Residual Plot",  # Title for the plot
+  pch = 16,              # Use filled circles for points
+  col = "darkgreen"      # Color of the points
+)
 
-# Add a horizontal line at zero to indicate the baseline
-abline(h = 0, col = "red")
-
-
-##################################################################################
-####################  Table 2: contingency table                ####################   
-##################################################################################
-table(raw_data$artist, raw_data$producer)
-
-chisq.test(table(raw_data$artist, raw_data$producer))
+# Add a horizontal line at the mean of the residuals (which should ideally be zero)
+abline(h = mean(residuals), col = "red", lty = 2, lwd = 2)  # Red dashed line
