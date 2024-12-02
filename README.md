@@ -1,4 +1,1 @@
-READ ME TEST
-test
-test
-test
+Statistics 215 Final Project. My data analysis involved collecting information on numerous variables on songs: artists, producers, key signatures, length, nomination awards, etc. My main research looked into examining song length with relation to overall number of streams. Specifically, if the length of a song affected the number of direct streams with listener attention, full listen time, etc. 
