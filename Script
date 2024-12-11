@@ -186,3 +186,4 @@ print(chisq_test$expected)
 # You can format the contingency table into a nice LaTeX or HTML format with xtable
 library(xtable)
 print(xtable(contingency_table), type = "html")  # You can change the type to "latex" if needed
+
