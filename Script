@@ -13,7 +13,7 @@ library(tidyverse)
 library(ggplot2)
 library(haven)
 library(forcats)
-library(psych)
+library(psych)  # Only load once!
 
 # Load data 
 library(readr)
@@ -21,126 +21,147 @@ raw_data <- read_csv("raw_data.csv")
 View(raw_data)
 
 ##################################################################################
-############### Table 1: descriptive statistics    ####################   
-##################################################################################
-table(raw_data$song_length)
-mean(raw_data$song_length)
-sd(raw_data$song_length)
-
-table(raw_data$streams)
-mean(raw_data$streams)
-sd(raw_data$streams)
-
-table(raw_data$song_descriptor)
-
-table(raw_data$song_topic)
-
-table(raw_data$personal_enjoyment)
-mean(raw_data$personal_enjoyment)
-sd(raw_data$personal_enjoyment)
-
-table(raw_data$album)
-
-##################################################################################
-#################### Figure 1: boxplot             ####################   
-##################################################################################
-lm(song_length ~ key, data = raw_data)
-aov(song_length ~ key, data = raw_data)
-summary(song_length ~ key, data = raw_data)
-boxplot(song_length ~ key, data = raw_data)
-
-lm(song_length ~ key, data = raw_data)
-aov(song_length ~ key, data = raw_data)
-summary(song_length ~ key, data = raw_data)
-boxplot(song_length ~ key, data = raw_data)
-boxplot(song_length ~ key, data = raw_data, 
-        xlab = "Key Signature", 
-        ylab = "Song Length (seconds)", 
-        main = "Figure 1: Song Length vs Key Signature")
-
-##################################################################################
-####################   Figure 2: scatter plot             ####################   
-##################################################################################
-# Create a scatter plot with clean labels
-
-# Log-transform the 'streams' variable
-raw_data$lnstreams <- log(raw_data$streams)
-
-# Create the scatter plot with the log-transformed 'streams'
-plot(
-  raw_data$song_length, 
-  raw_data$lnstreams,  # Use log-transformed 'streams' for the Y-axis
-  xlab = "Song Length",  # Clean X-axis label
-  ylab = "Log of Streams",  # Update Y-axis label to reflect log transformation
-  main = "Figure 2: Song Length and Streams",  # Update plot title
-  pch = 16,  # Use a filled circle for points
-  col = "blue"  # Points color
-)
-
-# Add mean lines for the new Y-axis (log-transformed streams)
-meany <- mean(raw_data$song_length)
-meanx <- mean(raw_data$lnstreams)  # Use log-transformed 'streams' for the mean
-abline(h = meanx, col = "black", lty = 2)  # Horizontal mean line
-abline(v = meany, col = "black", lty = 2)  # Vertical mean line
-
-# Fit a linear model using the log-transformed 'streams'
-linear_relationship <- lm(lnstreams ~ song_length, data = raw_data)  # Use log-transformed 'streams'
-summary(linear_relationship)
-
-# Add the regression line to the plot for log-transformed 'streams'
-abline(linear_relationship, col = "red", lwd = 2)  # Regression line in red
-
-##################################################################################
-####################  Figure 3: Residual Plot                 ####################   
-##################################################################################
-# Fit the linear regression model (from Figure 2)
-linear_relationship <- lm(streams ~ song_length, data = raw_data)
-
-# Extract residuals from the model
-residuals <- resid(linear_relationship)
-
-# Create the residual plot
-plot(
-  raw_data$song_length,  # X-axis: predictor (independent variable)
-  residuals,             # Y-axis: residuals (errors from regression)
-  xlab = "Song Length",  # Label for the X-axis
-  ylab = "Residuals",    # Label for the Y-axis
-  main = "Figure 3: Residual Plot",  # Title for the plot
-  pch = 16,              # Use filled circles for points
-  col = "darkgreen"      # Color of the points
-)
-
-# Add a horizontal line at the mean of the residuals (which should ideally be zero)
-abline(h = mean(residuals), col = "red", lty = 2, lwd = 2)  # Red dashed line
-
-##################################################################################
-####################  Table 1: Descriptive Statistics         ####################   
+############### Table 1: Descriptive statistics    ####################   
 ##################################################################################
 # Descriptive statistics using summary() for all variables
 summary(raw_data)
 
-# Descriptive statistics using mean() and sd() for individual variables
+# Alternatively, use the describe() function from the psych package for a more detailed summary
+describe(raw_data)
+
+# If you prefer specific statistics (mean, sd) for key variables, you can do the following:
 mean_song_length <- mean(raw_data$song_length)
 sd_song_length <- sd(raw_data$song_length)
 
 mean_streams <- mean(raw_data$streams)
 sd_streams <- sd(raw_data$streams)
 
-# Output to check the means and standard deviations
+# Output to check the means and standard deviations for song_length and streams
 cat("Mean Song Length: ", mean_song_length, "\n")
 cat("SD Song Length: ", sd_song_length, "\n")
 cat("Mean Streams: ", mean_streams, "\n")
 cat("SD Streams: ", sd_streams, "\n")
 
-# If you want a more detailed summary from the psych package
-# install.packages("psych")  # Uncomment if you don't have this package installed
-library(psych)
-describe(raw_data)
+##################################################################################
+#################### Update Factor Levels for Key Signature ######################
+##################################################################################
+
+# Relabel factor levels for 'key' to include flat symbols
+raw_data$key <- fct_recode(as.factor(raw_data$key),
+                           "C" = "C",
+                           "D♭" = "Db",
+                           "D" = "D",
+                           "E♭" = "Eb",
+                           "E" = "E",
+                           "F" = "F",
+                           "G♭" = "Gb",
+                           "G" = "G",
+                           "A♭" = "Ab",
+                           "A" = "A",
+                           "B♭" = "Bb",
+                           "B" = "B")
+
+##################################################################################
+#################### Figure 1: Boxplot of Song Length by Key #####################
+##################################################################################
+
+# Boxplot with updated key signature labels
+boxplot(song_length ~ key, 
+        data = raw_data, 
+        xlab = "Key Signature", 
+        ylab = "Song Length (seconds)", 
+        main = "Figure 1: Song Length vs Key Signature",
+        col = "lightblue")  # Add color for aesthetics
+
+# Summarize and analyze relationships between song length and key
+model <- aov(song_length ~ key, data = raw_data)
+summary(model)  # Output ANOVA table for interpretation
+
+##################################################################################
+#################### Figure 2: Scatter Plot of Song Length vs Streams ############
+##################################################################################
+
+# Log-transform the 'streams' variable for better visualization
+raw_data$lnstreams <- log(raw_data$streams)
+
+# Create the scatter plot
+plot(
+  raw_data$song_length, 
+  raw_data$lnstreams, 
+  xlab = "Song Length (seconds)",  # Clear and descriptive X-axis label
+  ylab = "Log of Streams",         # Clear and descriptive Y-axis label
+  main = "Figure 2: Song Length vs Log of Streams",  # Updated title for clarity
+  pch = 16,  # Use filled circles for points
+  col = "blue"  # Set points to blue for better visibility
+)
+
+# Add mean lines for both axes
+abline(h = mean(raw_data$lnstreams, na.rm = TRUE), col = "black", lty = 2)  # Horizontal mean line
+abline(v = mean(raw_data$song_length, na.rm = TRUE), col = "black", lty = 2)  # Vertical mean line
+
+# Fit a linear model using the log-transformed 'streams'
+linear_relationship <- lm(lnstreams ~ song_length, data = raw_data)
+
+# Output a summary of the linear model
+summary(linear_relationship)
+
+# Add the regression line to the plot
+abline(linear_relationship, col = "red", lwd = 2)  # Regression line in red
+
+# Add a legend for clarity
+legend(
+  "topright", 
+  legend = c("Mean Lines", "Regression Line"), 
+  col = c("black", "red"), 
+  lty = c(2, 1), 
+  lwd = c(1, 2), 
+  bty = "n"  # Remove the box around the legend
+)
+
+##################################################################################
+#################### Figure 3: Residual Plot of Song Length vs Streams ##########
+##################################################################################
+
+# Fit the linear regression model (from Figure 2) using the original, untransformed streams variable
+linear_relationship <- lm(streams ~ song_length, data = raw_data)
+
+# Extract the residuals from the model
+residuals <- resid(linear_relationship)
+
+# Scale the residuals to make them smaller (e.g., in millions)
+residuals_scaled <- residuals / 1e6  # Divide by 1,000,000 to scale the residuals
+
+# Create the residual plot
+plot(
+  raw_data$song_length,  # X-axis: predictor (independent variable)
+  residuals_scaled,      # Y-axis: scaled residuals
+  xlab = "Song Length (seconds)",  # Label for the X-axis
+  ylab = "Residuals (millions)",   # Label for the Y-axis
+  main = "Figure 3: Residual Plot of Song Length vs Streams",  # Title for the plot
+  pch = 16,              # Use filled circles for points
+  col = "darkgreen",     # Color of the points
+  xaxt = "n",            # Remove the default X-axis
+  yaxt = "n"             # Remove the default Y-axis
+)
+
+# Add a horizontal line at the mean of the scaled residuals (which should ideally be zero)
+abline(h = mean(residuals_scaled), col = "red", lty = 2, lwd = 2)  # Red dashed line
+
+# Optionally, add a vertical line at the mean of the song length
+abline(v = mean(raw_data$song_length), col = "blue", lty = 2, lwd = 2)  # Blue dashed line for song length
+
+# Adjust the Y-axis to show scaled residuals as whole numbers in a readable format
+axis(2, at = pretty(residuals_scaled), labels = scales::comma(pretty(residuals_scaled)))
+
+# Adjust the X-axis to show song length in a readable format
+axis(1, at = pretty(raw_data$song_length), labels = scales::comma(pretty(raw_data$song_length)))
+
 ##################################################################################
 ####################  Table 2: Contingency Table             ####################   
 ##################################################################################
-# Create a contingency table between two categorical variables (e.g., variable1 and variable2)
-contingency_table <- table(raw_data$variable1, raw_data$variable2)
+
+# Create a contingency table between two categorical variables (e.g., artist and producer)
+contingency_table <- table(raw_data$artist, raw_data$producer)
 
 # View the contingency table
 print(contingency_table)
@@ -151,8 +172,17 @@ chisq_test <- chisq.test(contingency_table)
 # Output the results of the Chi-square test
 print(chisq_test)
 
-# For a clearer, formatted table, use the xtable package (if desired)
-# install.packages("xtable")  # Uncomment if not installed
-library(xtable)
-xtable(contingency_table)
+# Chi-square interpretation:
+cat("Chi-Square Test Interpretation:\n")
+cat("Chi-Square Statistic: ", chisq_test$statistic, "\n")
+cat("Degrees of Freedom: ", chisq_test$parameter, "\n")
+cat("P-Value: ", chisq_test$p.value, "\n")
 
+# If you want to show the expected counts alongside the observed, you can use the following:
+cat("Expected Counts:\n")
+print(chisq_test$expected)
+
+# For a clearer, formatted table, use the xtable package (if desired)
+# You can format the contingency table into a nice LaTeX or HTML format with xtable
+library(xtable)
+print(xtable(contingency_table), type = "html")  # You can change the type to "latex" if needed
