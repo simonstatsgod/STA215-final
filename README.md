@@ -1,6 +1,6 @@
 Overview
 
-This README provides the insstuctions for accessing, cleaning, and analyzing the song dataset used in my final prokect for STA 215 (Fall 2024). It details the cleaning process, the steps of operationalization of the variables, and how the data is used in R Studio.
+This README provides the insrtuctions for accessing, cleaning, and analyzing the song dataset used in my final prokect for STA 215 (Fall 2024). It details the cleaning process, the steps of operationalization of the variables, and how the data is used in R Studio.
 
 Data Access
 
