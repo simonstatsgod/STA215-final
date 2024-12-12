@@ -29,16 +29,16 @@ summary(raw_data)
 # Alternatively, use the describe() function from the psych package for a more detailed summary
 describe(raw_data)
 
-# If you prefer specific statistics (mean, sd) for key variables, you can do the following:
-mean_song_length <- mean(raw_data$song_length)
-sd_song_length <- sd(raw_data$song_length)
+# If you prefer specific statistics (mean, sd) for key variables (streams and bpm), you can do the following:
+mean_bpm <- mean(raw_data$bpm)  # Calculate the mean bpm
+sd_bpm <- sd(raw_data$bpm)      # Calculate the standard deviation for bpm
 
-mean_streams <- mean(raw_data$streams)
-sd_streams <- sd(raw_data$streams)
+mean_streams <- mean(raw_data$streams)  # Calculate the mean streams
+sd_streams <- sd(raw_data$streams)      # Calculate the standard deviation for streams
 
-# Output to check the means and standard deviations for song_length and streams
-cat("Mean Song Length: ", mean_song_length, "\n")
-cat("SD Song Length: ", sd_song_length, "\n")
+# Output to check the means and standard deviations for bpm and streams
+cat("Mean BPM: ", mean_bpm, "\n")
+cat("SD BPM: ", sd_bpm, "\n")
 cat("Mean Streams: ", mean_streams, "\n")
 cat("SD Streams: ", sd_streams, "\n")
 
@@ -186,4 +186,3 @@ print(chisq_test$expected)
 # You can format the contingency table into a nice LaTeX or HTML format with xtable
 library(xtable)
 print(xtable(contingency_table), type = "html")  # You can change the type to "latex" if needed
-
