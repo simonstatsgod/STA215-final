@@ -90,7 +90,7 @@ plot(
   raw_data$lnstreams, 
   xlab = "Song Length (seconds)",  # Clear and descriptive X-axis label
   ylab = "Log of Streams",         # Clear and descriptive Y-axis label
-  main = "Figure 2: Song Length vs Log of Streams",  # Updated title for clarity
+  main = "Figure 1: Scatterplot of Relationship between Song Length vs Log of Streams",  # Updated title for clarity
   pch = 16,  # Use filled circles for points
   col = "blue"  # Set points to blue for better visibility
 )
@@ -137,7 +137,7 @@ plot(
   residuals_scaled,      # Y-axis: scaled residuals
   xlab = "Song Length (seconds)",  # Label for the X-axis
   ylab = "Residuals (millions)",   # Label for the Y-axis
-  main = "Figure 3: Residual Plot of Song Length vs Streams",  # Title for the plot
+  main = "Figure 2: Scatter Plot of Song Length and Residuals from Regression Analysis",  # Title for the plot
   pch = 16,              # Use filled circles for points
   col = "darkgreen",     # Color of the points
   xaxt = "n",            # Remove the default X-axis
@@ -186,3 +186,70 @@ print(chisq_test$expected)
 # You can format the contingency table into a nice LaTeX or HTML format with xtable
 library(xtable)
 print(xtable(contingency_table), type = "html")  # You can change the type to "latex" if needed
+##################################################################################
+####################  Calculating Values  ########################################   
+##################################################################################
+# Calculate mean, standard deviation, maximum, and minimum for song length
+mean_song_length <- mean(raw_data$song_length)
+sd_song_length <- sd(raw_data$song_length)
+max_song_length <- max(raw_data$song_length)
+min_song_length <- min(raw_data$song_length)
+
+# Output the results
+cat("Mean Song Length (seconds): ", mean_song_length, "\n")
+cat("Standard Deviation of Song Length (seconds): ", sd_song_length, "\n")
+cat("Maximum Song Length (seconds): ", max_song_length, "\n")
+cat("Minimum Song Length (seconds): ", min_song_length, "\n")
+######
+# Calculate mean, standard deviation, maximum, and minimum for lnstreams (log-transformed streams)
+mean_lnstreams <- mean(raw_data$lnstreams, na.rm = TRUE)
+sd_lnstreams <- sd(raw_data$lnstreams, na.rm = TRUE)
+max_lnstreams <- max(raw_data$lnstreams, na.rm = TRUE)
+min_lnstreams <- min(raw_data$lnstreams, na.rm = TRUE)
+
+# Output the results for lnstreams (log-transformed streams)
+cat("Mean Log-Transformed Streams: ", mean_lnstreams, "\n")
+cat("Standard Deviation of Log-Transformed Streams: ", sd_lnstreams, "\n")
+cat("Maximum Log-Transformed Streams: ", max_lnstreams, "\n")
+cat("Minimum Log-Transformed Streams: ", min_lnstreams, "\n")
+##################################################################################
+####################  lnstreams values     #######################################   
+##################################################################################
+# Example lnstreams values
+lnstreams_values <- c(19.92042, 1.324763, 13.90725, 22.11699)
+
+# Convert lnstreams to original stream values using exp()
+original_streams <- exp(lnstreams_values)
+
+# Output the converted stream values
+original_streams
+###
+# Assuming your dataset is named 'raw_data' and the 'streams' column contains the actual number of streams
+
+# Calculate the standard deviation of the number of streams
+sd_streams <- sd(raw_data$streams)
+
+# Print the standard deviation
+cat("Standard Deviation of Streams: ", sd_streams, "\n")
+##################################################################################
+####################Extracting Values from Linear Regression  ####################   
+##################################################################################
+# Step 1: Fit the linear regression model
+linear_relationship <- lm(lnstreams ~ song_length, data = raw_data)
+
+# Step 2: View the summary of the linear regression model
+regression_summary <- summary(linear_relationship)
+print(regression_summary)
+
+# Step 3: Extract the R-squared value
+r_squared <- regression_summary$r.squared
+cat("R-squared:", r_squared, "\n")
+
+# Step 4: Extract the p-value for the song_length variable
+p_value <- regression_summary$coefficients["song_length", "Pr(>|t|)"]
+cat("P-value for song_length:", p_value, "\n")
+
+
+
+
+
